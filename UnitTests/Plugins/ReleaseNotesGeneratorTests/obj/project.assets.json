@@ -1,0 +1,578 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.6.1": {
+      "NUnit/2.6.4": {
+        "type": "package",
+        "compile": {
+          "lib/nunit.framework.dll": {}
+        },
+        "runtime": {
+          "lib/nunit.framework.dll": {}
+        }
+      },
+      "SmartFormat.NET/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/SmartFormat.dll": {}
+        },
+        "runtime": {
+          "lib/net45/SmartFormat.dll": {}
+        }
+      },
+      "System.IO.Abstractions/2.0.0.144": {
+        "type": "package",
+        "compile": {
+          "lib/net40/System.IO.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/net40/System.IO.Abstractions.dll": {}
+        }
+      },
+      "System.Reactive.Interfaces/3.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/System.Reactive.Interfaces.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Reactive.Interfaces.dll": {}
+        }
+      },
+      "GitCommands/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.6.1",
+        "dependencies": {
+          "GitExtUtils": "1.0.0",
+          "GitUIPluginInterfaces": "1.0.0",
+          "SmartFormat.NET": "2.0.0",
+          "System.IO.Abstractions": "2.0.0.144"
+        },
+        "compile": {
+          "bin/placeholder/GitCommands.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GitCommands.dll": {}
+        }
+      },
+      "GitExtUtils/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/GitExtUtils.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GitExtUtils.dll": {}
+        }
+      },
+      "GitUIPluginInterfaces/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.6.1",
+        "dependencies": {
+          "GitExtUtils": "1.0.0",
+          "System.Reactive.Interfaces": "3.1.1"
+        },
+        "compile": {
+          "bin/placeholder/GitUIPluginInterfaces.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GitUIPluginInterfaces.dll": {}
+        }
+      },
+      "ReleaseNotesGenerator/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "GitUIPluginInterfaces": "1.0.0",
+          "ResourceManager": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ReleaseNotesGenerator.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ReleaseNotesGenerator.dll": {}
+        }
+      },
+      "ResourceManager/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.6.1",
+        "dependencies": {
+          "GitCommands": "1.0.0",
+          "GitExtUtils": "1.0.0",
+          "GitUIPluginInterfaces": "1.0.0",
+          "SmartFormat.NET": "2.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ResourceManager.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ResourceManager.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.6.1/win": {
+      "NUnit/2.6.4": {
+        "type": "package",
+        "compile": {
+          "lib/nunit.framework.dll": {}
+        },
+        "runtime": {
+          "lib/nunit.framework.dll": {}
+        }
+      },
+      "SmartFormat.NET/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/SmartFormat.dll": {}
+        },
+        "runtime": {
+          "lib/net45/SmartFormat.dll": {}
+        }
+      },
+      "System.IO.Abstractions/2.0.0.144": {
+        "type": "package",
+        "compile": {
+          "lib/net40/System.IO.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/net40/System.IO.Abstractions.dll": {}
+        }
+      },
+      "System.Reactive.Interfaces/3.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/System.Reactive.Interfaces.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Reactive.Interfaces.dll": {}
+        }
+      },
+      "GitCommands/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.6.1",
+        "dependencies": {
+          "GitExtUtils": "1.0.0",
+          "GitUIPluginInterfaces": "1.0.0",
+          "SmartFormat.NET": "2.0.0",
+          "System.IO.Abstractions": "2.0.0.144"
+        },
+        "compile": {
+          "bin/placeholder/GitCommands.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GitCommands.dll": {}
+        }
+      },
+      "GitExtUtils/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/GitExtUtils.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GitExtUtils.dll": {}
+        }
+      },
+      "GitUIPluginInterfaces/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.6.1",
+        "dependencies": {
+          "GitExtUtils": "1.0.0",
+          "System.Reactive.Interfaces": "3.1.1"
+        },
+        "compile": {
+          "bin/placeholder/GitUIPluginInterfaces.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GitUIPluginInterfaces.dll": {}
+        }
+      },
+      "ReleaseNotesGenerator/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "GitUIPluginInterfaces": "1.0.0",
+          "ResourceManager": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ReleaseNotesGenerator.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ReleaseNotesGenerator.dll": {}
+        }
+      },
+      "ResourceManager/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.6.1",
+        "dependencies": {
+          "GitCommands": "1.0.0",
+          "GitExtUtils": "1.0.0",
+          "GitUIPluginInterfaces": "1.0.0",
+          "SmartFormat.NET": "2.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ResourceManager.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ResourceManager.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.6.1/win-x64": {
+      "NUnit/2.6.4": {
+        "type": "package",
+        "compile": {
+          "lib/nunit.framework.dll": {}
+        },
+        "runtime": {
+          "lib/nunit.framework.dll": {}
+        }
+      },
+      "SmartFormat.NET/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/SmartFormat.dll": {}
+        },
+        "runtime": {
+          "lib/net45/SmartFormat.dll": {}
+        }
+      },
+      "System.IO.Abstractions/2.0.0.144": {
+        "type": "package",
+        "compile": {
+          "lib/net40/System.IO.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/net40/System.IO.Abstractions.dll": {}
+        }
+      },
+      "System.Reactive.Interfaces/3.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/System.Reactive.Interfaces.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Reactive.Interfaces.dll": {}
+        }
+      },
+      "GitCommands/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.6.1",
+        "dependencies": {
+          "GitExtUtils": "1.0.0",
+          "GitUIPluginInterfaces": "1.0.0",
+          "SmartFormat.NET": "2.0.0",
+          "System.IO.Abstractions": "2.0.0.144"
+        },
+        "compile": {
+          "bin/placeholder/GitCommands.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GitCommands.dll": {}
+        }
+      },
+      "GitExtUtils/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/GitExtUtils.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GitExtUtils.dll": {}
+        }
+      },
+      "GitUIPluginInterfaces/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.6.1",
+        "dependencies": {
+          "GitExtUtils": "1.0.0",
+          "System.Reactive.Interfaces": "3.1.1"
+        },
+        "compile": {
+          "bin/placeholder/GitUIPluginInterfaces.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GitUIPluginInterfaces.dll": {}
+        }
+      },
+      "ReleaseNotesGenerator/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "GitUIPluginInterfaces": "1.0.0",
+          "ResourceManager": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ReleaseNotesGenerator.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ReleaseNotesGenerator.dll": {}
+        }
+      },
+      "ResourceManager/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.6.1",
+        "dependencies": {
+          "GitCommands": "1.0.0",
+          "GitExtUtils": "1.0.0",
+          "GitUIPluginInterfaces": "1.0.0",
+          "SmartFormat.NET": "2.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ResourceManager.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ResourceManager.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.6.1/win-x86": {
+      "NUnit/2.6.4": {
+        "type": "package",
+        "compile": {
+          "lib/nunit.framework.dll": {}
+        },
+        "runtime": {
+          "lib/nunit.framework.dll": {}
+        }
+      },
+      "SmartFormat.NET/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/SmartFormat.dll": {}
+        },
+        "runtime": {
+          "lib/net45/SmartFormat.dll": {}
+        }
+      },
+      "System.IO.Abstractions/2.0.0.144": {
+        "type": "package",
+        "compile": {
+          "lib/net40/System.IO.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/net40/System.IO.Abstractions.dll": {}
+        }
+      },
+      "System.Reactive.Interfaces/3.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/System.Reactive.Interfaces.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Reactive.Interfaces.dll": {}
+        }
+      },
+      "GitCommands/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.6.1",
+        "dependencies": {
+          "GitExtUtils": "1.0.0",
+          "GitUIPluginInterfaces": "1.0.0",
+          "SmartFormat.NET": "2.0.0",
+          "System.IO.Abstractions": "2.0.0.144"
+        },
+        "compile": {
+          "bin/placeholder/GitCommands.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GitCommands.dll": {}
+        }
+      },
+      "GitExtUtils/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/GitExtUtils.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GitExtUtils.dll": {}
+        }
+      },
+      "GitUIPluginInterfaces/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.6.1",
+        "dependencies": {
+          "GitExtUtils": "1.0.0",
+          "System.Reactive.Interfaces": "3.1.1"
+        },
+        "compile": {
+          "bin/placeholder/GitUIPluginInterfaces.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GitUIPluginInterfaces.dll": {}
+        }
+      },
+      "ReleaseNotesGenerator/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "GitUIPluginInterfaces": "1.0.0",
+          "ResourceManager": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ReleaseNotesGenerator.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ReleaseNotesGenerator.dll": {}
+        }
+      },
+      "ResourceManager/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.6.1",
+        "dependencies": {
+          "GitCommands": "1.0.0",
+          "GitExtUtils": "1.0.0",
+          "GitUIPluginInterfaces": "1.0.0",
+          "SmartFormat.NET": "2.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ResourceManager.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ResourceManager.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "NUnit/2.6.4": {
+      "sha512": "cmSPvaCMRSP0DI19FP1Liw9DyJY3E/vOY1OrVaeJBZpZFWHkmT3fB9ngGWnZX/ftvA7zJEbghEaw3Yd+u4YFAw==",
+      "type": "package",
+      "path": "nunit/2.6.4",
+      "files": [
+        "lib/nunit.framework.dll",
+        "lib/nunit.framework.xml",
+        "license.txt",
+        "nunit.2.6.4.nupkg.sha512",
+        "nunit.nuspec"
+      ]
+    },
+    "SmartFormat.NET/2.0.0": {
+      "sha512": "DnAe0A2r2ajj7RuerfQCCImD5BGIzHQjkvSOEEucfAt34gZ/dCvPXW6lwenBtCZmVug0vlqlB1Te6knRfGUI0g==",
+      "type": "package",
+      "path": "smartformat.net/2.0.0",
+      "files": [
+        "lib/net40/SmartFormat.dll",
+        "lib/net40/SmartFormat.pdb",
+        "lib/net40/SmartFormat.xml",
+        "lib/net45/SmartFormat.dll",
+        "lib/net45/SmartFormat.pdb",
+        "lib/net45/SmartFormat.xml",
+        "lib/netstandard1.6/SmartFormat.dll",
+        "lib/netstandard1.6/SmartFormat.pdb",
+        "lib/netstandard1.6/SmartFormat.xml",
+        "smartformat.net.2.0.0.nupkg.sha512",
+        "smartformat.net.nuspec"
+      ]
+    },
+    "System.IO.Abstractions/2.0.0.144": {
+      "sha512": "c1fs7DtHRfTQKlLKRIX9HKh2xltTvJBmxuNlkC7bfsR2dLuj4kmlD7Y9sJgazxxf0I6+jdXcc3KtHl2ybMkRIw==",
+      "type": "package",
+      "path": "system.io.abstractions/2.0.0.144",
+      "files": [
+        "lib/net40/System.IO.Abstractions.dll",
+        "system.io.abstractions.2.0.0.144.nupkg.sha512",
+        "system.io.abstractions.nuspec"
+      ]
+    },
+    "System.Reactive.Interfaces/3.1.1": {
+      "sha512": "aNVY3QoRznGFeQ+w+bMqhD8ElNWoyYq+7XTQIoxKKjBOyTOjUqIMEf1wvSdtwC4y92zg2W9q38b4Sr6cYNHVLg==",
+      "type": "package",
+      "path": "system.reactive.interfaces/3.1.1",
+      "files": [
+        "lib/net45/System.Reactive.Interfaces.dll",
+        "lib/net45/System.Reactive.Interfaces.xml",
+        "lib/netstandard1.0/System.Reactive.Interfaces.dll",
+        "lib/netstandard1.0/System.Reactive.Interfaces.xml",
+        "system.reactive.interfaces.3.1.1.nupkg.sha512",
+        "system.reactive.interfaces.nuspec"
+      ]
+    },
+    "GitCommands/1.0.0": {
+      "type": "project",
+      "path": "../../../GitCommands/GitCommands.csproj",
+      "msbuildProject": "../../../GitCommands/GitCommands.csproj"
+    },
+    "GitExtUtils/1.0.0": {
+      "type": "project",
+      "path": "../../../GitExtUtils/GitExtUtils.csproj",
+      "msbuildProject": "../../../GitExtUtils/GitExtUtils.csproj"
+    },
+    "GitUIPluginInterfaces/1.0.0": {
+      "type": "project",
+      "path": "../../../Plugins/GitUIPluginInterfaces/GitUIPluginInterfaces.csproj",
+      "msbuildProject": "../../../Plugins/GitUIPluginInterfaces/GitUIPluginInterfaces.csproj"
+    },
+    "ReleaseNotesGenerator/1.0.0": {
+      "type": "project",
+      "path": "../../../Plugins/ReleaseNotesGenerator/ReleaseNotesGenerator.csproj",
+      "msbuildProject": "../../../Plugins/ReleaseNotesGenerator/ReleaseNotesGenerator.csproj"
+    },
+    "ResourceManager/1.0.0": {
+      "type": "project",
+      "path": "../../../ResourceManager/ResourceManager.csproj",
+      "msbuildProject": "../../../ResourceManager/ResourceManager.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.6.1": [
+      "NUnit >= 2.6.4",
+      "ReleaseNotesGenerator >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\chadya\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\chadya\\Documents\\gitwork\\gitextensions\\UnitTests\\Plugins\\ReleaseNotesGeneratorTests\\ReleaseNotesGeneratorTests.csproj",
+      "projectName": "ReleaseNotesGeneratorTests",
+      "projectPath": "C:\\Users\\chadya\\Documents\\gitwork\\gitextensions\\UnitTests\\Plugins\\ReleaseNotesGeneratorTests\\ReleaseNotesGeneratorTests.csproj",
+      "packagesPath": "C:\\Users\\chadya\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\chadya\\Documents\\gitwork\\gitextensions\\UnitTests\\Plugins\\ReleaseNotesGeneratorTests\\obj\\",
+      "projectStyle": "PackageReference",
+      "skipContentFileWrite": true,
+      "configFilePaths": [
+        "C:\\Users\\chadya\\Documents\\gitwork\\gitextensions\\.nuget\\NuGet.Config",
+        "C:\\Users\\chadya\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net461"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net461": {
+          "projectReferences": {
+            "C:\\Users\\chadya\\Documents\\gitwork\\gitextensions\\Plugins\\ReleaseNotesGenerator\\ReleaseNotesGenerator.csproj": {
+              "projectPath": "C:\\Users\\chadya\\Documents\\gitwork\\gitextensions\\Plugins\\ReleaseNotesGenerator\\ReleaseNotesGenerator.csproj"
+            }
+          }
+        }
+      }
+    },
+    "dependencies": {
+      "NUnit": {
+        "target": "Package",
+        "version": "2.6.4"
+      }
+    },
+    "frameworks": {
+      "net461": {
+        "dependencies": {
+          "NUnit": {
+            "target": "Package",
+            "version": "2.6.4"
+          }
+        }
+      }
+    },
+    "runtimes": {
+      "win": {
+        "#import": []
+      },
+      "win-x64": {
+        "#import": []
+      },
+      "win-x86": {
+        "#import": []
+      }
+    }
+  }
+}

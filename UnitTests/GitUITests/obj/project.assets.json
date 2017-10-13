@@ -1,0 +1,1535 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.6.1": {
+      "ConEmu.Core/17.5.17": {
+        "type": "package",
+        "build": {
+          "Build/_._": {}
+        }
+      },
+      "FluentAssertions/4.19.3": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Xml",
+          "System.Xml.Linq"
+        ],
+        "compile": {
+          "lib/net45/FluentAssertions.Core.dll": {},
+          "lib/net45/FluentAssertions.dll": {}
+        },
+        "runtime": {
+          "lib/net45/FluentAssertions.Core.dll": {},
+          "lib/net45/FluentAssertions.dll": {}
+        }
+      },
+      "NSubstitute/2.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net45/NSubstitute.dll": {}
+        },
+        "runtime": {
+          "lib/net45/NSubstitute.dll": {}
+        }
+      },
+      "NUnit/2.6.4": {
+        "type": "package",
+        "compile": {
+          "lib/nunit.framework.dll": {}
+        },
+        "runtime": {
+          "lib/nunit.framework.dll": {}
+        }
+      },
+      "RestSharp/105.2.3": {
+        "type": "package",
+        "compile": {
+          "lib/net46/RestSharp.dll": {}
+        },
+        "runtime": {
+          "lib/net46/RestSharp.dll": {}
+        }
+      },
+      "SmartFormat.NET/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/SmartFormat.dll": {}
+        },
+        "runtime": {
+          "lib/net45/SmartFormat.dll": {}
+        }
+      },
+      "System.IO.Abstractions/2.0.0.144": {
+        "type": "package",
+        "compile": {
+          "lib/net40/System.IO.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/net40/System.IO.Abstractions.dll": {}
+        }
+      },
+      "System.Reactive/3.1.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Reactive.PlatformServices": "3.1.1",
+          "System.Reactive.Windows.Threading": "3.1.1"
+        }
+      },
+      "System.Reactive.Core/3.1.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Reactive.Interfaces": "3.1.1"
+        },
+        "compile": {
+          "lib/net46/System.Reactive.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net46/System.Reactive.Core.dll": {}
+        }
+      },
+      "System.Reactive.Interfaces/3.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/System.Reactive.Interfaces.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Reactive.Interfaces.dll": {}
+        }
+      },
+      "System.Reactive.Linq/3.1.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Reactive.Core": "3.1.1"
+        },
+        "compile": {
+          "lib/net46/System.Reactive.Linq.dll": {}
+        },
+        "runtime": {
+          "lib/net46/System.Reactive.Linq.dll": {}
+        }
+      },
+      "System.Reactive.PlatformServices/3.1.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Reactive.Linq": "3.1.1"
+        },
+        "compile": {
+          "lib/net46/System.Reactive.PlatformServices.dll": {}
+        },
+        "runtime": {
+          "lib/net46/System.Reactive.PlatformServices.dll": {}
+        }
+      },
+      "System.Reactive.Windows.Threading/3.1.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Reactive.Core": "3.1.1"
+        },
+        "frameworkAssemblies": [
+          "System.Windows",
+          "WindowsBase"
+        ],
+        "compile": {
+          "lib/net45/System.Reactive.Windows.Threading.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Reactive.Windows.Threading.dll": {}
+        }
+      },
+      "ConEmuWinForms/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.0,Profile=Client",
+        "dependencies": {
+          "ConEmu.Core": "17.5.17"
+        },
+        "compile": {
+          "bin/placeholder/ConEmuWinForms.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ConEmuWinForms.dll": {}
+        }
+      },
+      "Git.hub/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.0,Profile=Client",
+        "dependencies": {
+          "RestSharp": "105.2.3"
+        },
+        "compile": {
+          "bin/placeholder/Git.hub.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Git.hub.dll": {}
+        }
+      },
+      "GitCommands/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.6.1",
+        "dependencies": {
+          "GitExtUtils": "1.0.0",
+          "GitUIPluginInterfaces": "1.0.0",
+          "SmartFormat.NET": "2.0.0",
+          "System.IO.Abstractions": "2.0.0.144"
+        },
+        "compile": {
+          "bin/placeholder/GitCommands.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GitCommands.dll": {}
+        }
+      },
+      "GitExtUtils/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/GitExtUtils.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GitExtUtils.dll": {}
+        }
+      },
+      "GitUI/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.6.1",
+        "dependencies": {
+          "ConEmuWinForms": "1.0.0",
+          "Git.hub": "1.0.0",
+          "GitCommands": "1.0.0",
+          "GitExtUtils": "1.0.0",
+          "GitUIPluginInterfaces": "1.0.0",
+          "Gravatar": "1.0.0",
+          "ResourceManager": "1.0.0",
+          "SpellChecker": "1.0.0",
+          "System.Reactive": "3.1.1",
+          "System.Reactive.Core": "3.1.1",
+          "System.Reactive.Interfaces": "3.1.1",
+          "System.Reactive.Linq": "3.1.1",
+          "System.Reactive.PlatformServices": "3.1.1"
+        },
+        "compile": {
+          "bin/placeholder/GitUI.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GitUI.dll": {}
+        }
+      },
+      "GitUIPluginInterfaces/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.6.1",
+        "dependencies": {
+          "GitExtUtils": "1.0.0",
+          "System.Reactive.Interfaces": "3.1.1"
+        },
+        "compile": {
+          "bin/placeholder/GitUIPluginInterfaces.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GitUIPluginInterfaces.dll": {}
+        }
+      },
+      "Gravatar/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.6.1",
+        "dependencies": {
+          "System.IO.Abstractions": "2.0.0.144"
+        },
+        "compile": {
+          "bin/placeholder/Gravatar.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Gravatar.dll": {}
+        }
+      },
+      "ResourceManager/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.6.1",
+        "dependencies": {
+          "GitCommands": "1.0.0",
+          "GitExtUtils": "1.0.0",
+          "GitUIPluginInterfaces": "1.0.0",
+          "SmartFormat.NET": "2.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ResourceManager.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ResourceManager.dll": {}
+        }
+      },
+      "SpellChecker/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/SpellChecker.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SpellChecker.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.6.1/win": {
+      "ConEmu.Core/17.5.17": {
+        "type": "package",
+        "build": {
+          "Build/_._": {}
+        }
+      },
+      "FluentAssertions/4.19.3": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Xml",
+          "System.Xml.Linq"
+        ],
+        "compile": {
+          "lib/net45/FluentAssertions.Core.dll": {},
+          "lib/net45/FluentAssertions.dll": {}
+        },
+        "runtime": {
+          "lib/net45/FluentAssertions.Core.dll": {},
+          "lib/net45/FluentAssertions.dll": {}
+        }
+      },
+      "NSubstitute/2.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net45/NSubstitute.dll": {}
+        },
+        "runtime": {
+          "lib/net45/NSubstitute.dll": {}
+        }
+      },
+      "NUnit/2.6.4": {
+        "type": "package",
+        "compile": {
+          "lib/nunit.framework.dll": {}
+        },
+        "runtime": {
+          "lib/nunit.framework.dll": {}
+        }
+      },
+      "RestSharp/105.2.3": {
+        "type": "package",
+        "compile": {
+          "lib/net46/RestSharp.dll": {}
+        },
+        "runtime": {
+          "lib/net46/RestSharp.dll": {}
+        }
+      },
+      "SmartFormat.NET/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/SmartFormat.dll": {}
+        },
+        "runtime": {
+          "lib/net45/SmartFormat.dll": {}
+        }
+      },
+      "System.IO.Abstractions/2.0.0.144": {
+        "type": "package",
+        "compile": {
+          "lib/net40/System.IO.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/net40/System.IO.Abstractions.dll": {}
+        }
+      },
+      "System.Reactive/3.1.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Reactive.PlatformServices": "3.1.1",
+          "System.Reactive.Windows.Threading": "3.1.1"
+        }
+      },
+      "System.Reactive.Core/3.1.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Reactive.Interfaces": "3.1.1"
+        },
+        "compile": {
+          "lib/net46/System.Reactive.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net46/System.Reactive.Core.dll": {}
+        }
+      },
+      "System.Reactive.Interfaces/3.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/System.Reactive.Interfaces.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Reactive.Interfaces.dll": {}
+        }
+      },
+      "System.Reactive.Linq/3.1.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Reactive.Core": "3.1.1"
+        },
+        "compile": {
+          "lib/net46/System.Reactive.Linq.dll": {}
+        },
+        "runtime": {
+          "lib/net46/System.Reactive.Linq.dll": {}
+        }
+      },
+      "System.Reactive.PlatformServices/3.1.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Reactive.Linq": "3.1.1"
+        },
+        "compile": {
+          "lib/net46/System.Reactive.PlatformServices.dll": {}
+        },
+        "runtime": {
+          "lib/net46/System.Reactive.PlatformServices.dll": {}
+        }
+      },
+      "System.Reactive.Windows.Threading/3.1.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Reactive.Core": "3.1.1"
+        },
+        "frameworkAssemblies": [
+          "System.Windows",
+          "WindowsBase"
+        ],
+        "compile": {
+          "lib/net45/System.Reactive.Windows.Threading.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Reactive.Windows.Threading.dll": {}
+        }
+      },
+      "ConEmuWinForms/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.0,Profile=Client",
+        "dependencies": {
+          "ConEmu.Core": "17.5.17"
+        },
+        "compile": {
+          "bin/placeholder/ConEmuWinForms.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ConEmuWinForms.dll": {}
+        }
+      },
+      "Git.hub/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.0,Profile=Client",
+        "dependencies": {
+          "RestSharp": "105.2.3"
+        },
+        "compile": {
+          "bin/placeholder/Git.hub.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Git.hub.dll": {}
+        }
+      },
+      "GitCommands/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.6.1",
+        "dependencies": {
+          "GitExtUtils": "1.0.0",
+          "GitUIPluginInterfaces": "1.0.0",
+          "SmartFormat.NET": "2.0.0",
+          "System.IO.Abstractions": "2.0.0.144"
+        },
+        "compile": {
+          "bin/placeholder/GitCommands.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GitCommands.dll": {}
+        }
+      },
+      "GitExtUtils/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/GitExtUtils.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GitExtUtils.dll": {}
+        }
+      },
+      "GitUI/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.6.1",
+        "dependencies": {
+          "ConEmuWinForms": "1.0.0",
+          "Git.hub": "1.0.0",
+          "GitCommands": "1.0.0",
+          "GitExtUtils": "1.0.0",
+          "GitUIPluginInterfaces": "1.0.0",
+          "Gravatar": "1.0.0",
+          "ResourceManager": "1.0.0",
+          "SpellChecker": "1.0.0",
+          "System.Reactive": "3.1.1",
+          "System.Reactive.Core": "3.1.1",
+          "System.Reactive.Interfaces": "3.1.1",
+          "System.Reactive.Linq": "3.1.1",
+          "System.Reactive.PlatformServices": "3.1.1"
+        },
+        "compile": {
+          "bin/placeholder/GitUI.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GitUI.dll": {}
+        }
+      },
+      "GitUIPluginInterfaces/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.6.1",
+        "dependencies": {
+          "GitExtUtils": "1.0.0",
+          "System.Reactive.Interfaces": "3.1.1"
+        },
+        "compile": {
+          "bin/placeholder/GitUIPluginInterfaces.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GitUIPluginInterfaces.dll": {}
+        }
+      },
+      "Gravatar/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.6.1",
+        "dependencies": {
+          "System.IO.Abstractions": "2.0.0.144"
+        },
+        "compile": {
+          "bin/placeholder/Gravatar.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Gravatar.dll": {}
+        }
+      },
+      "ResourceManager/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.6.1",
+        "dependencies": {
+          "GitCommands": "1.0.0",
+          "GitExtUtils": "1.0.0",
+          "GitUIPluginInterfaces": "1.0.0",
+          "SmartFormat.NET": "2.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ResourceManager.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ResourceManager.dll": {}
+        }
+      },
+      "SpellChecker/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/SpellChecker.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SpellChecker.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.6.1/win-x64": {
+      "ConEmu.Core/17.5.17": {
+        "type": "package",
+        "build": {
+          "Build/_._": {}
+        }
+      },
+      "FluentAssertions/4.19.3": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Xml",
+          "System.Xml.Linq"
+        ],
+        "compile": {
+          "lib/net45/FluentAssertions.Core.dll": {},
+          "lib/net45/FluentAssertions.dll": {}
+        },
+        "runtime": {
+          "lib/net45/FluentAssertions.Core.dll": {},
+          "lib/net45/FluentAssertions.dll": {}
+        }
+      },
+      "NSubstitute/2.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net45/NSubstitute.dll": {}
+        },
+        "runtime": {
+          "lib/net45/NSubstitute.dll": {}
+        }
+      },
+      "NUnit/2.6.4": {
+        "type": "package",
+        "compile": {
+          "lib/nunit.framework.dll": {}
+        },
+        "runtime": {
+          "lib/nunit.framework.dll": {}
+        }
+      },
+      "RestSharp/105.2.3": {
+        "type": "package",
+        "compile": {
+          "lib/net46/RestSharp.dll": {}
+        },
+        "runtime": {
+          "lib/net46/RestSharp.dll": {}
+        }
+      },
+      "SmartFormat.NET/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/SmartFormat.dll": {}
+        },
+        "runtime": {
+          "lib/net45/SmartFormat.dll": {}
+        }
+      },
+      "System.IO.Abstractions/2.0.0.144": {
+        "type": "package",
+        "compile": {
+          "lib/net40/System.IO.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/net40/System.IO.Abstractions.dll": {}
+        }
+      },
+      "System.Reactive/3.1.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Reactive.PlatformServices": "3.1.1",
+          "System.Reactive.Windows.Threading": "3.1.1"
+        }
+      },
+      "System.Reactive.Core/3.1.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Reactive.Interfaces": "3.1.1"
+        },
+        "compile": {
+          "lib/net46/System.Reactive.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net46/System.Reactive.Core.dll": {}
+        }
+      },
+      "System.Reactive.Interfaces/3.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/System.Reactive.Interfaces.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Reactive.Interfaces.dll": {}
+        }
+      },
+      "System.Reactive.Linq/3.1.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Reactive.Core": "3.1.1"
+        },
+        "compile": {
+          "lib/net46/System.Reactive.Linq.dll": {}
+        },
+        "runtime": {
+          "lib/net46/System.Reactive.Linq.dll": {}
+        }
+      },
+      "System.Reactive.PlatformServices/3.1.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Reactive.Linq": "3.1.1"
+        },
+        "compile": {
+          "lib/net46/System.Reactive.PlatformServices.dll": {}
+        },
+        "runtime": {
+          "lib/net46/System.Reactive.PlatformServices.dll": {}
+        }
+      },
+      "System.Reactive.Windows.Threading/3.1.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Reactive.Core": "3.1.1"
+        },
+        "frameworkAssemblies": [
+          "System.Windows",
+          "WindowsBase"
+        ],
+        "compile": {
+          "lib/net45/System.Reactive.Windows.Threading.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Reactive.Windows.Threading.dll": {}
+        }
+      },
+      "ConEmuWinForms/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.0,Profile=Client",
+        "dependencies": {
+          "ConEmu.Core": "17.5.17"
+        },
+        "compile": {
+          "bin/placeholder/ConEmuWinForms.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ConEmuWinForms.dll": {}
+        }
+      },
+      "Git.hub/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.0,Profile=Client",
+        "dependencies": {
+          "RestSharp": "105.2.3"
+        },
+        "compile": {
+          "bin/placeholder/Git.hub.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Git.hub.dll": {}
+        }
+      },
+      "GitCommands/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.6.1",
+        "dependencies": {
+          "GitExtUtils": "1.0.0",
+          "GitUIPluginInterfaces": "1.0.0",
+          "SmartFormat.NET": "2.0.0",
+          "System.IO.Abstractions": "2.0.0.144"
+        },
+        "compile": {
+          "bin/placeholder/GitCommands.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GitCommands.dll": {}
+        }
+      },
+      "GitExtUtils/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/GitExtUtils.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GitExtUtils.dll": {}
+        }
+      },
+      "GitUI/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.6.1",
+        "dependencies": {
+          "ConEmuWinForms": "1.0.0",
+          "Git.hub": "1.0.0",
+          "GitCommands": "1.0.0",
+          "GitExtUtils": "1.0.0",
+          "GitUIPluginInterfaces": "1.0.0",
+          "Gravatar": "1.0.0",
+          "ResourceManager": "1.0.0",
+          "SpellChecker": "1.0.0",
+          "System.Reactive": "3.1.1",
+          "System.Reactive.Core": "3.1.1",
+          "System.Reactive.Interfaces": "3.1.1",
+          "System.Reactive.Linq": "3.1.1",
+          "System.Reactive.PlatformServices": "3.1.1"
+        },
+        "compile": {
+          "bin/placeholder/GitUI.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GitUI.dll": {}
+        }
+      },
+      "GitUIPluginInterfaces/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.6.1",
+        "dependencies": {
+          "GitExtUtils": "1.0.0",
+          "System.Reactive.Interfaces": "3.1.1"
+        },
+        "compile": {
+          "bin/placeholder/GitUIPluginInterfaces.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GitUIPluginInterfaces.dll": {}
+        }
+      },
+      "Gravatar/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.6.1",
+        "dependencies": {
+          "System.IO.Abstractions": "2.0.0.144"
+        },
+        "compile": {
+          "bin/placeholder/Gravatar.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Gravatar.dll": {}
+        }
+      },
+      "ResourceManager/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.6.1",
+        "dependencies": {
+          "GitCommands": "1.0.0",
+          "GitExtUtils": "1.0.0",
+          "GitUIPluginInterfaces": "1.0.0",
+          "SmartFormat.NET": "2.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ResourceManager.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ResourceManager.dll": {}
+        }
+      },
+      "SpellChecker/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/SpellChecker.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SpellChecker.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.6.1/win-x86": {
+      "ConEmu.Core/17.5.17": {
+        "type": "package",
+        "build": {
+          "Build/_._": {}
+        }
+      },
+      "FluentAssertions/4.19.3": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Xml",
+          "System.Xml.Linq"
+        ],
+        "compile": {
+          "lib/net45/FluentAssertions.Core.dll": {},
+          "lib/net45/FluentAssertions.dll": {}
+        },
+        "runtime": {
+          "lib/net45/FluentAssertions.Core.dll": {},
+          "lib/net45/FluentAssertions.dll": {}
+        }
+      },
+      "NSubstitute/2.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net45/NSubstitute.dll": {}
+        },
+        "runtime": {
+          "lib/net45/NSubstitute.dll": {}
+        }
+      },
+      "NUnit/2.6.4": {
+        "type": "package",
+        "compile": {
+          "lib/nunit.framework.dll": {}
+        },
+        "runtime": {
+          "lib/nunit.framework.dll": {}
+        }
+      },
+      "RestSharp/105.2.3": {
+        "type": "package",
+        "compile": {
+          "lib/net46/RestSharp.dll": {}
+        },
+        "runtime": {
+          "lib/net46/RestSharp.dll": {}
+        }
+      },
+      "SmartFormat.NET/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/SmartFormat.dll": {}
+        },
+        "runtime": {
+          "lib/net45/SmartFormat.dll": {}
+        }
+      },
+      "System.IO.Abstractions/2.0.0.144": {
+        "type": "package",
+        "compile": {
+          "lib/net40/System.IO.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/net40/System.IO.Abstractions.dll": {}
+        }
+      },
+      "System.Reactive/3.1.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Reactive.PlatformServices": "3.1.1",
+          "System.Reactive.Windows.Threading": "3.1.1"
+        }
+      },
+      "System.Reactive.Core/3.1.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Reactive.Interfaces": "3.1.1"
+        },
+        "compile": {
+          "lib/net46/System.Reactive.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net46/System.Reactive.Core.dll": {}
+        }
+      },
+      "System.Reactive.Interfaces/3.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/System.Reactive.Interfaces.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Reactive.Interfaces.dll": {}
+        }
+      },
+      "System.Reactive.Linq/3.1.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Reactive.Core": "3.1.1"
+        },
+        "compile": {
+          "lib/net46/System.Reactive.Linq.dll": {}
+        },
+        "runtime": {
+          "lib/net46/System.Reactive.Linq.dll": {}
+        }
+      },
+      "System.Reactive.PlatformServices/3.1.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Reactive.Linq": "3.1.1"
+        },
+        "compile": {
+          "lib/net46/System.Reactive.PlatformServices.dll": {}
+        },
+        "runtime": {
+          "lib/net46/System.Reactive.PlatformServices.dll": {}
+        }
+      },
+      "System.Reactive.Windows.Threading/3.1.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Reactive.Core": "3.1.1"
+        },
+        "frameworkAssemblies": [
+          "System.Windows",
+          "WindowsBase"
+        ],
+        "compile": {
+          "lib/net45/System.Reactive.Windows.Threading.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Reactive.Windows.Threading.dll": {}
+        }
+      },
+      "ConEmuWinForms/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.0,Profile=Client",
+        "dependencies": {
+          "ConEmu.Core": "17.5.17"
+        },
+        "compile": {
+          "bin/placeholder/ConEmuWinForms.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ConEmuWinForms.dll": {}
+        }
+      },
+      "Git.hub/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.0,Profile=Client",
+        "dependencies": {
+          "RestSharp": "105.2.3"
+        },
+        "compile": {
+          "bin/placeholder/Git.hub.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Git.hub.dll": {}
+        }
+      },
+      "GitCommands/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.6.1",
+        "dependencies": {
+          "GitExtUtils": "1.0.0",
+          "GitUIPluginInterfaces": "1.0.0",
+          "SmartFormat.NET": "2.0.0",
+          "System.IO.Abstractions": "2.0.0.144"
+        },
+        "compile": {
+          "bin/placeholder/GitCommands.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GitCommands.dll": {}
+        }
+      },
+      "GitExtUtils/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/GitExtUtils.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GitExtUtils.dll": {}
+        }
+      },
+      "GitUI/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.6.1",
+        "dependencies": {
+          "ConEmuWinForms": "1.0.0",
+          "Git.hub": "1.0.0",
+          "GitCommands": "1.0.0",
+          "GitExtUtils": "1.0.0",
+          "GitUIPluginInterfaces": "1.0.0",
+          "Gravatar": "1.0.0",
+          "ResourceManager": "1.0.0",
+          "SpellChecker": "1.0.0",
+          "System.Reactive": "3.1.1",
+          "System.Reactive.Core": "3.1.1",
+          "System.Reactive.Interfaces": "3.1.1",
+          "System.Reactive.Linq": "3.1.1",
+          "System.Reactive.PlatformServices": "3.1.1"
+        },
+        "compile": {
+          "bin/placeholder/GitUI.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GitUI.dll": {}
+        }
+      },
+      "GitUIPluginInterfaces/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.6.1",
+        "dependencies": {
+          "GitExtUtils": "1.0.0",
+          "System.Reactive.Interfaces": "3.1.1"
+        },
+        "compile": {
+          "bin/placeholder/GitUIPluginInterfaces.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GitUIPluginInterfaces.dll": {}
+        }
+      },
+      "Gravatar/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.6.1",
+        "dependencies": {
+          "System.IO.Abstractions": "2.0.0.144"
+        },
+        "compile": {
+          "bin/placeholder/Gravatar.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Gravatar.dll": {}
+        }
+      },
+      "ResourceManager/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.6.1",
+        "dependencies": {
+          "GitCommands": "1.0.0",
+          "GitExtUtils": "1.0.0",
+          "GitUIPluginInterfaces": "1.0.0",
+          "SmartFormat.NET": "2.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ResourceManager.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ResourceManager.dll": {}
+        }
+      },
+      "SpellChecker/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/SpellChecker.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SpellChecker.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ConEmu.Core/17.5.17": {
+      "sha512": "krsm1vUp7noGswO07IdvhLwo1qxk9q7PDCwTafE1wDO8HBW+IE73J2xzRGllpFgTZ1d6iPqduMvpM5Uerj+5wA==",
+      "type": "package",
+      "path": "conemu.core/17.5.17",
+      "files": [
+        "Build/ConEmu.Core.Targets",
+        "Tools/ConEmu/CmdInit.cmd",
+        "Tools/ConEmu/ConEmu.exe",
+        "Tools/ConEmu/ConEmu64.exe",
+        "Tools/ConEmu/ConEmuC.exe",
+        "Tools/ConEmu/ConEmuC64.exe",
+        "Tools/ConEmu/ConEmuCD.dll",
+        "Tools/ConEmu/ConEmuCD64.dll",
+        "Tools/ConEmu/ConEmuHk.dll",
+        "Tools/ConEmu/ConEmuHk64.dll",
+        "Tools/ConEmu/GitShowBranch.cmd",
+        "conemu.core.17.5.17.nupkg.sha512",
+        "conemu.core.nuspec"
+      ]
+    },
+    "FluentAssertions/4.19.3": {
+      "sha512": "JUHxaE7lidu1Y4k8XmVyInzeyKT0oj5PzSKOb+fTruP+/IzqtWoDIXvA9J4auiJyzn0ZcNjI8NqAiYQTwKJpZA==",
+      "type": "package",
+      "path": "fluentassertions/4.19.3",
+      "files": [
+        "fluentassertions.4.19.3.nupkg.sha512",
+        "fluentassertions.nuspec",
+        "lib/net40/FluentAssertions.Core.dll",
+        "lib/net40/FluentAssertions.Core.pdb",
+        "lib/net40/FluentAssertions.Core.xml",
+        "lib/net40/FluentAssertions.dll",
+        "lib/net40/FluentAssertions.pdb",
+        "lib/net40/FluentAssertions.xml",
+        "lib/net45/FluentAssertions.Core.dll",
+        "lib/net45/FluentAssertions.Core.pdb",
+        "lib/net45/FluentAssertions.Core.xml",
+        "lib/net45/FluentAssertions.dll",
+        "lib/net45/FluentAssertions.pdb",
+        "lib/net45/FluentAssertions.xml",
+        "lib/netstandard1.3/FluentAssertions.Core.XML",
+        "lib/netstandard1.3/FluentAssertions.Core.dll",
+        "lib/netstandard1.3/FluentAssertions.Core.pdb",
+        "lib/netstandard1.3/FluentAssertions.dll",
+        "lib/netstandard1.3/FluentAssertions.pdb",
+        "lib/netstandard1.3/FluentAssertions.xml",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/FluentAssertions.Core.dll",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/FluentAssertions.Core.pdb",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/FluentAssertions.Core.xml",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/FluentAssertions.XML",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/FluentAssertions.dll",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/FluentAssertions.pdb",
+        "lib/portable-win81+wpa81/FluentAssertions.Core.dll",
+        "lib/portable-win81+wpa81/FluentAssertions.Core.pdb",
+        "lib/portable-win81+wpa81/FluentAssertions.Core.xml",
+        "lib/portable-win81+wpa81/FluentAssertions.dll",
+        "lib/portable-win81+wpa81/FluentAssertions.pdb",
+        "lib/portable-win81+wpa81/FluentAssertions.pri",
+        "lib/portable-win81+wpa81/FluentAssertions.xml",
+        "lib/sl5/FluentAssertions.Core.dll",
+        "lib/sl5/FluentAssertions.Core.pdb",
+        "lib/sl5/FluentAssertions.Core.xml",
+        "lib/sl5/FluentAssertions.dll",
+        "lib/sl5/FluentAssertions.pdb",
+        "lib/sl5/FluentAssertions.xml",
+        "lib/sl5/Microsoft.CSharp.dll",
+        "lib/sl5/Microsoft.CSharp.xml",
+        "lib/sl5/Microsoft.VisualStudio.QualityTools.UnitTesting.Silverlight.dll",
+        "lib/sl5/Microsoft.VisualStudio.QualityTools.UnitTesting.Silverlight.xml",
+        "lib/sl5/System.Xml.Linq.dll",
+        "lib/sl5/System.Xml.Linq.xml",
+        "lib/sl5/de/Microsoft.CSharp.resources.dll",
+        "lib/sl5/de/System.Xml.Linq.resources.dll",
+        "lib/sl5/es/Microsoft.CSharp.resources.dll",
+        "lib/sl5/es/System.Xml.Linq.resources.dll",
+        "lib/sl5/fr/Microsoft.CSharp.resources.dll",
+        "lib/sl5/fr/System.Xml.Linq.resources.dll",
+        "lib/sl5/it/Microsoft.CSharp.resources.dll",
+        "lib/sl5/it/System.Xml.Linq.resources.dll",
+        "lib/sl5/ja/Microsoft.CSharp.resources.dll",
+        "lib/sl5/ja/System.Xml.Linq.resources.dll",
+        "lib/sl5/ko/Microsoft.CSharp.resources.dll",
+        "lib/sl5/ko/System.Xml.Linq.resources.dll",
+        "lib/sl5/ru/Microsoft.CSharp.resources.dll",
+        "lib/sl5/ru/System.Xml.Linq.resources.dll",
+        "lib/sl5/zh-Hans/Microsoft.CSharp.resources.dll",
+        "lib/sl5/zh-Hans/System.Xml.Linq.resources.dll",
+        "lib/sl5/zh-Hant/Microsoft.CSharp.resources.dll",
+        "lib/sl5/zh-Hant/System.Xml.Linq.resources.dll",
+        "lib/uap10.0/FluentAssertions.Core.XML",
+        "lib/uap10.0/FluentAssertions.Core.dll",
+        "lib/uap10.0/FluentAssertions.Core.pdb",
+        "lib/uap10.0/FluentAssertions.dll",
+        "lib/uap10.0/FluentAssertions.pdb",
+        "lib/uap10.0/FluentAssertions.xml",
+        "lib/win81/FluentAssertions.Core.dll",
+        "lib/win81/FluentAssertions.Core.pdb",
+        "lib/win81/FluentAssertions.Core.xml",
+        "lib/win81/FluentAssertions.dll",
+        "lib/win81/FluentAssertions.pdb",
+        "lib/win81/FluentAssertions.pri",
+        "lib/win81/FluentAssertions.xml",
+        "lib/wp8/FluentAssertions.Core.dll",
+        "lib/wp8/FluentAssertions.Core.pdb",
+        "lib/wp8/FluentAssertions.Core.xml",
+        "lib/wp8/FluentAssertions.dll",
+        "lib/wp8/FluentAssertions.pdb",
+        "lib/wp8/FluentAssertions.xml",
+        "lib/wpa81/FluentAssertions.Core.dll",
+        "lib/wpa81/FluentAssertions.Core.pdb",
+        "lib/wpa81/FluentAssertions.Core.xml",
+        "lib/wpa81/FluentAssertions.dll",
+        "lib/wpa81/FluentAssertions.pdb",
+        "lib/wpa81/FluentAssertions.pri",
+        "lib/wpa81/FluentAssertions.xml"
+      ]
+    },
+    "NSubstitute/2.0.3": {
+      "sha512": "ZQRZ5b3/lhz4qKUdwzFSoPiFJnYSIjVzsmmfgvFG/7GjJ3+HO59NvaKBg+RcMNBrMNAR07X/mal3as4P0w+Dmw==",
+      "type": "package",
+      "path": "nsubstitute/2.0.3",
+      "files": [
+        "BreakingChanges.txt",
+        "CHANGELOG.txt",
+        "LICENSE.txt",
+        "README.txt",
+        "acknowledgements.txt",
+        "lib/net35/NSubstitute.XML",
+        "lib/net35/NSubstitute.dll",
+        "lib/net40/NSubstitute.XML",
+        "lib/net40/NSubstitute.dll",
+        "lib/net45/NSubstitute.XML",
+        "lib/net45/NSubstitute.dll",
+        "lib/netstandard1.3/NSubstitute.dll",
+        "lib/netstandard1.3/NSubstitute.xml",
+        "nsubstitute.2.0.3.nupkg.sha512",
+        "nsubstitute.nuspec"
+      ]
+    },
+    "NUnit/2.6.4": {
+      "sha512": "cmSPvaCMRSP0DI19FP1Liw9DyJY3E/vOY1OrVaeJBZpZFWHkmT3fB9ngGWnZX/ftvA7zJEbghEaw3Yd+u4YFAw==",
+      "type": "package",
+      "path": "nunit/2.6.4",
+      "files": [
+        "lib/nunit.framework.dll",
+        "lib/nunit.framework.xml",
+        "license.txt",
+        "nunit.2.6.4.nupkg.sha512",
+        "nunit.nuspec"
+      ]
+    },
+    "RestSharp/105.2.3": {
+      "sha512": "50LkciOclb7Lza9QXqR9reKeUoPlDQiFD4iBdOmd6twOBmTtqEFIOXQgdDdsTHQg4HcGh6EvrM6gN1X72vkJLA==",
+      "type": "package",
+      "path": "restsharp/105.2.3",
+      "files": [
+        "lib/MonoAndroid10/RestSharp.dll",
+        "lib/MonoAndroid10/RestSharp.xml",
+        "lib/MonoTouch10/RestSharp.dll",
+        "lib/MonoTouch10/RestSharp.xml",
+        "lib/Xamarin.iOS10/RestSharp.dll",
+        "lib/Xamarin.iOS10/RestSharp.xml",
+        "lib/net35/RestSharp.dll",
+        "lib/net35/RestSharp.xml",
+        "lib/net4-client/RestSharp.dll",
+        "lib/net4-client/RestSharp.xml",
+        "lib/net4/RestSharp.dll",
+        "lib/net4/RestSharp.xml",
+        "lib/net45/RestSharp.dll",
+        "lib/net45/RestSharp.xml",
+        "lib/net451/RestSharp.dll",
+        "lib/net451/RestSharp.xml",
+        "lib/net452/RestSharp.dll",
+        "lib/net452/RestSharp.xml",
+        "lib/net46/RestSharp.dll",
+        "lib/net46/RestSharp.xml",
+        "lib/sl5/RestSharp.dll",
+        "lib/sl5/RestSharp.xml",
+        "lib/windowsphone8/RestSharp.dll",
+        "lib/windowsphone8/RestSharp.xml",
+        "lib/windowsphone81/RestSharp.dll",
+        "lib/windowsphone81/RestSharp.xml",
+        "readme.txt",
+        "restsharp.105.2.3.nupkg.sha512",
+        "restsharp.nuspec"
+      ]
+    },
+    "SmartFormat.NET/2.0.0": {
+      "sha512": "DnAe0A2r2ajj7RuerfQCCImD5BGIzHQjkvSOEEucfAt34gZ/dCvPXW6lwenBtCZmVug0vlqlB1Te6knRfGUI0g==",
+      "type": "package",
+      "path": "smartformat.net/2.0.0",
+      "files": [
+        "lib/net40/SmartFormat.dll",
+        "lib/net40/SmartFormat.pdb",
+        "lib/net40/SmartFormat.xml",
+        "lib/net45/SmartFormat.dll",
+        "lib/net45/SmartFormat.pdb",
+        "lib/net45/SmartFormat.xml",
+        "lib/netstandard1.6/SmartFormat.dll",
+        "lib/netstandard1.6/SmartFormat.pdb",
+        "lib/netstandard1.6/SmartFormat.xml",
+        "smartformat.net.2.0.0.nupkg.sha512",
+        "smartformat.net.nuspec"
+      ]
+    },
+    "System.IO.Abstractions/2.0.0.144": {
+      "sha512": "c1fs7DtHRfTQKlLKRIX9HKh2xltTvJBmxuNlkC7bfsR2dLuj4kmlD7Y9sJgazxxf0I6+jdXcc3KtHl2ybMkRIw==",
+      "type": "package",
+      "path": "system.io.abstractions/2.0.0.144",
+      "files": [
+        "lib/net40/System.IO.Abstractions.dll",
+        "system.io.abstractions.2.0.0.144.nupkg.sha512",
+        "system.io.abstractions.nuspec"
+      ]
+    },
+    "System.Reactive/3.1.1": {
+      "sha512": "elkQdVQoBVX39BHrYHMc3Rnbb7a9qBJIwNCvhq1psPMOEPo62/VHB0lJu671x3fOrGL4V/85n6p2Az1tw7Kvmg==",
+      "type": "package",
+      "path": "system.reactive/3.1.1",
+      "files": [
+        "system.reactive.3.1.1.nupkg.sha512",
+        "system.reactive.nuspec"
+      ]
+    },
+    "System.Reactive.Core/3.1.1": {
+      "sha512": "CKWC+UP1aM75taNX+sTBn2P97uHIUjKxq+z45iy7P91QGFqNFleR2tsqIC76HMVvYl7o8oWyMiycdsc9rC1Z/g==",
+      "type": "package",
+      "path": "system.reactive.core/3.1.1",
+      "files": [
+        "lib/net45/System.Reactive.Core.dll",
+        "lib/net45/System.Reactive.Core.xml",
+        "lib/net46/System.Reactive.Core.dll",
+        "lib/net46/System.Reactive.Core.xml",
+        "lib/netcore451/System.Reactive.Core.dll",
+        "lib/netcore451/System.Reactive.Core.xml",
+        "lib/netcoreapp1.0/System.Reactive.Core.dll",
+        "lib/netcoreapp1.0/System.Reactive.Core.xml",
+        "lib/netstandard1.0/System.Reactive.Core.dll",
+        "lib/netstandard1.0/System.Reactive.Core.xml",
+        "lib/netstandard1.1/System.Reactive.Core.dll",
+        "lib/netstandard1.1/System.Reactive.Core.xml",
+        "lib/netstandard1.3/System.Reactive.Core.dll",
+        "lib/netstandard1.3/System.Reactive.Core.xml",
+        "lib/uap10.0/System.Reactive.Core.dll",
+        "lib/uap10.0/System.Reactive.Core.xml",
+        "lib/wpa81/System.Reactive.Core.dll",
+        "lib/wpa81/System.Reactive.Core.xml",
+        "system.reactive.core.3.1.1.nupkg.sha512",
+        "system.reactive.core.nuspec"
+      ]
+    },
+    "System.Reactive.Interfaces/3.1.1": {
+      "sha512": "aNVY3QoRznGFeQ+w+bMqhD8ElNWoyYq+7XTQIoxKKjBOyTOjUqIMEf1wvSdtwC4y92zg2W9q38b4Sr6cYNHVLg==",
+      "type": "package",
+      "path": "system.reactive.interfaces/3.1.1",
+      "files": [
+        "lib/net45/System.Reactive.Interfaces.dll",
+        "lib/net45/System.Reactive.Interfaces.xml",
+        "lib/netstandard1.0/System.Reactive.Interfaces.dll",
+        "lib/netstandard1.0/System.Reactive.Interfaces.xml",
+        "system.reactive.interfaces.3.1.1.nupkg.sha512",
+        "system.reactive.interfaces.nuspec"
+      ]
+    },
+    "System.Reactive.Linq/3.1.1": {
+      "sha512": "HwsZsoYRg51cLGBOEa0uoZ5+d4CMcHEg/KrbqePhLxoz/SLA+ULISphBtn3woABPATOQ6j5YgGZWh4jxnJ3KYQ==",
+      "type": "package",
+      "path": "system.reactive.linq/3.1.1",
+      "files": [
+        "lib/net45/System.Reactive.Linq.dll",
+        "lib/net45/System.Reactive.Linq.xml",
+        "lib/net46/System.Reactive.Linq.dll",
+        "lib/net46/System.Reactive.Linq.xml",
+        "lib/netstandard1.0/System.Reactive.Linq.dll",
+        "lib/netstandard1.0/System.Reactive.Linq.xml",
+        "lib/netstandard1.1/System.Reactive.Linq.dll",
+        "lib/netstandard1.1/System.Reactive.Linq.xml",
+        "lib/netstandard1.3/System.Reactive.Linq.dll",
+        "lib/netstandard1.3/System.Reactive.Linq.xml",
+        "system.reactive.linq.3.1.1.nupkg.sha512",
+        "system.reactive.linq.nuspec"
+      ]
+    },
+    "System.Reactive.PlatformServices/3.1.1": {
+      "sha512": "jCJ3iGDLb4duOxZ/Uo3O7PssWE48uRp0fw92AlIwrMNaZRUmZNkZyqbl0nUT+joFARBYun8XiVIDQreMJKBedA==",
+      "type": "package",
+      "path": "system.reactive.platformservices/3.1.1",
+      "files": [
+        "lib/net45/System.Reactive.PlatformServices.dll",
+        "lib/net45/System.Reactive.PlatformServices.xml",
+        "lib/net46/System.Reactive.PlatformServices.dll",
+        "lib/net46/System.Reactive.PlatformServices.xml",
+        "lib/netcore451/System.Reactive.PlatformServices.dll",
+        "lib/netcore451/System.Reactive.PlatformServices.xml",
+        "lib/netcoreapp1.0/System.Reactive.PlatformServices.dll",
+        "lib/netcoreapp1.0/System.Reactive.PlatformServices.xml",
+        "lib/netstandard1.0/System.Reactive.PlatformServices.dll",
+        "lib/netstandard1.0/System.Reactive.PlatformServices.xml",
+        "lib/netstandard1.3/System.Reactive.PlatformServices.dll",
+        "lib/netstandard1.3/System.Reactive.PlatformServices.xml",
+        "lib/uap10.0/System.Reactive.PlatformServices.dll",
+        "lib/uap10.0/System.Reactive.PlatformServices.xml",
+        "lib/wpa81/System.Reactive.PlatformServices.dll",
+        "lib/wpa81/System.Reactive.PlatformServices.xml",
+        "system.reactive.platformservices.3.1.1.nupkg.sha512",
+        "system.reactive.platformservices.nuspec"
+      ]
+    },
+    "System.Reactive.Windows.Threading/3.1.1": {
+      "sha512": "y1TtaYaFKJBH0L3wbLVCV2Le5cNIyVczwZAULboPyFdKTIiRb7OGAZYigly8SjNC3NHwzrTHcF8WlkL0WjGUmA==",
+      "type": "package",
+      "path": "system.reactive.windows.threading/3.1.1",
+      "files": [
+        "lib/net45/System.Reactive.Windows.Threading.dll",
+        "lib/net45/System.Reactive.Windows.Threading.xml",
+        "lib/netcore451/System.Reactive.Windows.Threading.dll",
+        "lib/netcore451/System.Reactive.Windows.Threading.xml",
+        "lib/uap10.0/System.Reactive.Windows.Threading.dll",
+        "lib/uap10.0/System.Reactive.Windows.Threading.xml",
+        "lib/wpa81/System.Reactive.Windows.Threading.dll",
+        "lib/wpa81/System.Reactive.Windows.Threading.xml",
+        "system.reactive.windows.threading.3.1.1.nupkg.sha512",
+        "system.reactive.windows.threading.nuspec"
+      ]
+    },
+    "ConEmuWinForms/1.0.0": {
+      "type": "project",
+      "path": "../../Externals/conemu-inside/ConEmuWinForms/ConEmuWinForms.csproj",
+      "msbuildProject": "../../Externals/conemu-inside/ConEmuWinForms/ConEmuWinForms.csproj"
+    },
+    "Git.hub/1.0.0": {
+      "type": "project",
+      "path": "../../Externals/Git.hub/Git.hub/Git.hub.csproj",
+      "msbuildProject": "../../Externals/Git.hub/Git.hub/Git.hub.csproj"
+    },
+    "GitCommands/1.0.0": {
+      "type": "project",
+      "path": "../../GitCommands/GitCommands.csproj",
+      "msbuildProject": "../../GitCommands/GitCommands.csproj"
+    },
+    "GitExtUtils/1.0.0": {
+      "type": "project",
+      "path": "../../GitExtUtils/GitExtUtils.csproj",
+      "msbuildProject": "../../GitExtUtils/GitExtUtils.csproj"
+    },
+    "GitUI/1.0.0": {
+      "type": "project",
+      "path": "../../GitUI/GitUI.csproj",
+      "msbuildProject": "../../GitUI/GitUI.csproj"
+    },
+    "GitUIPluginInterfaces/1.0.0": {
+      "type": "project",
+      "path": "../../Plugins/GitUIPluginInterfaces/GitUIPluginInterfaces.csproj",
+      "msbuildProject": "../../Plugins/GitUIPluginInterfaces/GitUIPluginInterfaces.csproj"
+    },
+    "Gravatar/1.0.0": {
+      "type": "project",
+      "path": "../../Gravatar/Gravatar.csproj",
+      "msbuildProject": "../../Gravatar/Gravatar.csproj"
+    },
+    "ResourceManager/1.0.0": {
+      "type": "project",
+      "path": "../../ResourceManager/ResourceManager.csproj",
+      "msbuildProject": "../../ResourceManager/ResourceManager.csproj"
+    },
+    "SpellChecker/1.0.0": {
+      "type": "project",
+      "path": "../../NetSpell.SpellChecker/SpellChecker.csproj",
+      "msbuildProject": "../../NetSpell.SpellChecker/SpellChecker.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.6.1": [
+      "ConEmuWinForms >= 1.0.0",
+      "FluentAssertions >= 4.19.3",
+      "GitCommands >= 1.0.0",
+      "GitUI >= 1.0.0",
+      "GitUIPluginInterfaces >= 1.0.0",
+      "NSubstitute >= 2.0.3",
+      "NUnit >= 2.6.4",
+      "ResourceManager >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\chadya\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\chadya\\Documents\\gitwork\\gitextensions\\UnitTests\\GitUITests\\GitUITests.csproj",
+      "projectName": "GitUITests",
+      "projectPath": "C:\\Users\\chadya\\Documents\\gitwork\\gitextensions\\UnitTests\\GitUITests\\GitUITests.csproj",
+      "packagesPath": "C:\\Users\\chadya\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\chadya\\Documents\\gitwork\\gitextensions\\UnitTests\\GitUITests\\obj\\",
+      "projectStyle": "PackageReference",
+      "skipContentFileWrite": true,
+      "configFilePaths": [
+        "C:\\Users\\chadya\\Documents\\gitwork\\gitextensions\\.nuget\\NuGet.Config",
+        "C:\\Users\\chadya\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net461"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net461": {
+          "projectReferences": {
+            "C:\\Users\\chadya\\Documents\\gitwork\\gitextensions\\Externals\\conemu-inside\\ConEmuWinForms\\ConEmuWinForms.csproj": {
+              "projectPath": "C:\\Users\\chadya\\Documents\\gitwork\\gitextensions\\Externals\\conemu-inside\\ConEmuWinForms\\ConEmuWinForms.csproj"
+            },
+            "C:\\Users\\chadya\\Documents\\gitwork\\gitextensions\\GitCommands\\GitCommands.csproj": {
+              "projectPath": "C:\\Users\\chadya\\Documents\\gitwork\\gitextensions\\GitCommands\\GitCommands.csproj"
+            },
+            "C:\\Users\\chadya\\Documents\\gitwork\\gitextensions\\GitUI\\GitUI.csproj": {
+              "projectPath": "C:\\Users\\chadya\\Documents\\gitwork\\gitextensions\\GitUI\\GitUI.csproj"
+            },
+            "C:\\Users\\chadya\\Documents\\gitwork\\gitextensions\\Plugins\\GitUIPluginInterfaces\\GitUIPluginInterfaces.csproj": {
+              "projectPath": "C:\\Users\\chadya\\Documents\\gitwork\\gitextensions\\Plugins\\GitUIPluginInterfaces\\GitUIPluginInterfaces.csproj"
+            },
+            "C:\\Users\\chadya\\Documents\\gitwork\\gitextensions\\ResourceManager\\ResourceManager.csproj": {
+              "projectPath": "C:\\Users\\chadya\\Documents\\gitwork\\gitextensions\\ResourceManager\\ResourceManager.csproj"
+            }
+          }
+        }
+      }
+    },
+    "dependencies": {
+      "FluentAssertions": {
+        "target": "Package",
+        "version": "4.19.3"
+      },
+      "NSubstitute": {
+        "target": "Package",
+        "version": "2.0.3"
+      },
+      "NUnit": {
+        "target": "Package",
+        "version": "2.6.4"
+      }
+    },
+    "frameworks": {
+      "net461": {
+        "dependencies": {
+          "FluentAssertions": {
+            "target": "Package",
+            "version": "4.19.3"
+          },
+          "NSubstitute": {
+            "target": "Package",
+            "version": "2.0.3"
+          },
+          "NUnit": {
+            "target": "Package",
+            "version": "2.6.4"
+          }
+        }
+      }
+    },
+    "runtimes": {
+      "win": {
+        "#import": []
+      },
+      "win-x64": {
+        "#import": []
+      },
+      "win-x86": {
+        "#import": []
+      }
+    }
+  }
+}
