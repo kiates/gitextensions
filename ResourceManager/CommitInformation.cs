@@ -22,6 +22,7 @@ namespace ResourceManager
         /// Gets the commit info for module.
         /// </summary>
         /// <param name="module">Git module.</param>
+        /// <param name="linkFactory"></param>
         /// <param name="sha1">The sha1.</param>
         /// <returns></returns>
         public static CommitInformation GetCommitInfo(GitModule module, LinkFactory linkFactory, string sha1)

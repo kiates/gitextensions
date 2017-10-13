@@ -41,6 +41,7 @@ namespace GitUIPluginInterfaces
         /// Saves value from Control to settings
         /// </summary>
         /// <param name="settings"></param>
+        /// <param name="areSettingsEffective"></param>
         void SaveSetting(ISettingsSource settings, bool areSettingsEffective);
 
         /// <summary>
@@ -88,6 +89,7 @@ namespace GitUIPluginInterfaces
         /// Saves value from Control to settings
         /// </summary>
         /// <param name="settings"></param>
+        /// <param name="areSettingsEffective"></param>
         public void SaveSetting(ISettingsSource settings, bool areSettingsEffective)
         {
             SaveSetting(settings, areSettingsEffective, Control);
